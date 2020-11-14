@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this file to allow clear text traffic, amen :)-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">15.185.67.88</domain>
+    </domain-config>
+</network-security-config>
