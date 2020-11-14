@@ -18,20 +18,21 @@
 
     <ProgressBar
         android:id="@+id/progress"
-        android:visibility="gone"
-        tools:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imgFace"
-        app:layout_constraintEnd_toEndOf="@+id/imgFace"
-        app:layout_constraintStart_toStartOf="@+id/imgFace"
-        app:layout_constraintTop_toTopOf="@+id/imgFace" />
+        android:layout_marginTop="8dp"
+        android:elevation="15dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFace"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/imgFace"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="132dp"
         android:src="@drawable/ic_baseline_person_add_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -42,9 +43,10 @@
         android:id="@+id/edtUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="68dp"
         android:hint="User Name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgFace" />
 
